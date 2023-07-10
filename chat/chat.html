@@ -1,0 +1,97 @@
+<html>
+
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: cursive;
+    }
+    #cm-input {
+        background-color: rgba(50, 50, 50, 0.5);
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 80%;
+        height: 6%;
+        color: white;
+        font-family: cursive;
+        z-index: 2;
+    }
+    #cm-button {
+        background-color: rgba(50, 50, 50, 0.5);
+        position: fixed;
+        bottom: 0px;
+        right: 5%;
+        width: 10%;
+        height: 6%;
+        color : white;
+        font-family: cursive;
+        z-index: 2;
+    }
+    #cm-delete-button {
+    background-color: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    bottom: 0px;
+    right: 0%;
+    width: 5%;
+    height: 6%;
+    color : white;
+    font-family: cursive;
+    z-index: 2;
+    }
+    #cm-hash {
+    background-color: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    bottom: 0px;
+    right: 15%;
+    width: 5%;
+    height: 6%;
+    color : white;
+    font-family: cursive;
+    z-index: 2;
+    }
+    .chatmessage {
+        background-color: rgba(50, 50, 50, 0.5);
+        position: absolute;
+        left: 200px;
+        width: 80%;
+        overflow-x: hidden;
+    }
+    #chats p {
+        overflow-wrap: break-word;
+    }
+    #chats p:last-child {
+        padding-bottom: 100px;
+    }
+    #section- {
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(50, 50, 50);
+        height: 94%;
+        width: 150px;
+    }
+    #section {
+        position: fixed;
+        z-index: 1;
+        cursor: pointer;
+    }
+    a {
+        color: gray;
+    }
+</style>
+<body>
+<div id="section-">
+<br><div></div>
+<div></div>
+<div></div>
+</div>
+<div id="section"></div>
+<div class="chatmessage" id="chats"></div>
+<textarea id="cm-input" placeholder="message here"></textarea><button id="cm-hash">#</button><button id="cm-button">send</button><button id="cm-delete-button">Delete</button>
+</body>
+<script defer type="text/javascript" src="script.js"></script>
+<!--
+onkeydown="localStorage.setItem('chatinput', cmInput.value);"
+<a onclick="window.location.href = '#s1'; changeSections();" id="s1">・Section1</a>
+-->
+</html>
