@@ -6,7 +6,7 @@ window.onload = () => {
 	Input.value = localStorage.getItem('input');
 };
 
-document.addEventListener('keydown', (e) => {
+Input.addEventListener('keydown', (e) => {
     console.log(e.key);
     if (e.key !== 'aa') {
 	Div.innerHTML = Input.value;
